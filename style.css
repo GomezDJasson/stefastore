@@ -1,0 +1,79 @@
+        html{
+            font-family: Helvetica, sans-serif, Arial;
+        }
+
+        .titles{
+            margin: 20px;
+        }
+        .titles h1{
+            font-size: 3em;
+            color: #000000;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+            flex-direction: column;
+        }
+        .socialnetworks-inline i{
+            font-size: 40px;
+            margin: 15px;
+        }
+        .socialnetworks-inline{ flex-direction: row; }
+        .socialnetworks-inline > *{
+            padding-right: 15px;
+        }
+        .socialnetworks a{
+            padding: 20px 40px;
+            margin-bottom: 15px;
+            width: 250px;
+            background-color: #f34739;
+            border:1px solid #461b7e;
+            border-radius: 30px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        .socialnetworks a:nth-child(even){ color:#ffffff; }
+        .socialnetworks a:nth-child(odd){ color:#461b7e; }
+        .socialnetworks a:hover{
+            background: transparent;
+            transition: all .3s;
+            cursor: pointer;
+            color:#000000;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        .social-media-icon i{
+            color: #f34739;
+        }
+        .footer{
+            text-align: center;
+            color: #000000;
+            margin: 20px;
+        }
+        @media (max-width: 640px){
+            .container{
+                margin: 30px;
+            }
+            .socialnetworks-inline{ 
+                display: flex;
+                flex-wrap: wrap
+            }
+            .titles h1{
+                font-size: 2em;
+            }
+            /* .titles h2{
+                font-size: 1.5em;
+            } */
+            /* .logo img{
+                width: 70%;
+            } */
+            .socialnetworks a{
+                font-size: 2em;
+            }
+        }
