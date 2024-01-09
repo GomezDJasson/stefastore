@@ -1,13 +1,19 @@
+        *{
+            color: #ffffff;
+        }
+
         html{
-            font-family: Helvetica, sans-serif, Arial;
+            font-family: 'Fredoka One', sans-serif, Arial;
+            background: linear-gradient(130deg, rgb(180, 213, 16), rgb(29, 205, 102), rgb(48, 18, 186));
         }
 
         .titles{
             margin: 20px;
+            text-align: center;
         }
         .titles h1{
             font-size: 3em;
-            color: #000000;
+            color: #ffffff;
         }
         .container{
             display: flex;
@@ -15,19 +21,29 @@
             align-items: center;
             justify-content: center;
             margin: 15px;
+            padding: 15px;
             flex-direction: column;
         }
         .socialnetworks-inline i{
-            font-size: 40px;
+            font-size: 100px;
             margin: 15px;
+            padding: 15px;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px #CCC;
         }
-        .socialnetworks-inline{ flex-direction: row; }
-        .socialnetworks-inline > *{
-            padding-right: 15px;
+        .socialnetworks-inline{ 
+            flex-direction: row; 
         }
+
+        .socialnetworks-inline i:hover{
+            cursor: pointer;
+            font-size: 150px;
+        }
+        
         .socialnetworks a{
-            padding: 20px 40px;
-            margin-bottom: 15px;
+            padding: 20px;
+            margin-bottom: 10px;
             width: 250px;
             background-color: #f34739;
             border:1px solid #461b7e;
@@ -37,43 +53,38 @@
             font-size: 20px;
             font-weight: 800;
         }
-        .socialnetworks a:nth-child(even){ color:#ffffff; }
-        .socialnetworks a:nth-child(odd){ color:#461b7e; }
+        
         .socialnetworks a:hover{
             background: transparent;
             transition: all .3s;
             cursor: pointer;
             color:#000000;
         }
-        h1, h2{
-            text-align: center;
-        }
-        .social-media-icon i{
-            color: #f34739;
-        }
+        
         .footer{
             text-align: center;
-            color: #000000;
+            color: #ffffff;
             margin: 20px;
         }
         @media (max-width: 640px){
             .container{
-                margin: 30px;
+                margin: 10px;
             }
             .socialnetworks-inline{ 
                 display: flex;
                 flex-wrap: wrap
             }
+            .socialnetworks-inline i{ 
+                font-size: 70px;
+            }
+            .socialnetworks-inline i:hover{
+                cursor: pointer;
+                font-size: 85px;
+            }
             .titles h1{
                 font-size: 2em;
             }
-            /* .titles h2{
-                font-size: 1.5em;
-            } */
-            /* .logo img{
-                width: 70%;
-            } */
             .socialnetworks a{
-                font-size: 2em;
+                font-size: 1,5em;
             }
         }
