@@ -24,6 +24,9 @@
             padding: 15px;
             flex-direction: column;
         }
+        .logo img{
+            border-radius: 50%;
+        }
         .socialnetworks-inline i{
             font-size: 100px;
             margin: 15px;
