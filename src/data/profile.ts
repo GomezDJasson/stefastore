@@ -2,6 +2,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaThreads,
+  FaTiktok,
   FaWhatsapp,
   FaStore,
 } from 'react-icons/fa6'
@@ -27,6 +28,11 @@ export const profile = {
       label: 'Threads',
       href: 'https://www.threads.net/@stefastore18',
       icon: FaThreads,
+    },
+    {
+      label: 'TikTok',
+      href: 'https://www.tiktok.com/@stefastore18',
+      icon: FaTiktok,
     },
   ],
 
