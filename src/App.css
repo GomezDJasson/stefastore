@@ -596,16 +596,6 @@
     gap: 8px;
   }
 
-  .social-link {
-    min-height: 98px;
-  }
-
-  .social-link-icon {
-    width: 52px;
-    height: 52px;
-    font-size: 1.35rem;
-  }
-
   .social-link-label {
     font-size: 0.65rem;
   }
