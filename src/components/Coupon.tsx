@@ -6,8 +6,32 @@ export function Coupon() {
   const [copied, setCopied] = useState(false)
 
   const handleCopy = async () => {
+    const code = profile.coupon.code
+
     try {
-      await navigator.clipboard.writeText(profile.coupon.code)
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(code)
+      } else {
+        const textArea = document.createElement('textarea')
+
+        textArea.value = code
+        textArea.style.position = 'fixed'
+        textArea.style.left = '-9999px'
+        textArea.style.top = '0'
+        textArea.setAttribute('readonly', '')
+
+        document.body.appendChild(textArea)
+        textArea.focus()
+        textArea.select()
+
+        const copied = document.execCommand('copy')
+        document.body.removeChild(textArea)
+
+        if (!copied) {
+          throw new Error('No se pudo copiar el cupón')
+        }
+      }
+
       setCopied(true)
 
       window.setTimeout(() => {
@@ -39,7 +63,7 @@ export function Coupon() {
 
         <button
           type="button"
-          className="coupon-code"
+          className={`coupon-code ${copied ? 'coupon-copied' : ''}`}
           onClick={handleCopy}
           aria-label={
             copied
@@ -48,7 +72,7 @@ export function Coupon() {
           }
           title={copied ? '¡Copiado!' : 'Copiar cupón'}
         >
-          <span>{profile.coupon.code}</span>
+          <span>{copied ? '¡Cupón copiado!' : profile.coupon.code}</span>
           {copied ? <Check /> : <Copy />}
         </button>
       </div>

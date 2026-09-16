@@ -1,3 +1,4 @@
+import { Coupon } from './components/Coupon'
 import { profile } from './data/profile'
 import { ProfileHeader } from './components/ProfileHeader'
 import { SocialLinks } from './components/SocialLinks'
@@ -22,6 +23,8 @@ function App() {
         <ProfileHeader />
 
         <SocialLinks />
+
+        <Coupon />
 
         <Shopping />
 

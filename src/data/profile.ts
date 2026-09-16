@@ -37,7 +37,7 @@ export const profile = {
 
     coupon: {
       label: 'Cupón de descuento',
-      title: 'Mugs blancos',
+      title: 'Descuento en Mugs Blancos',
       code: 'MUGSREGALO26',
     },
 
