@@ -4,7 +4,6 @@ import {
   FaThreads,
   FaTiktok,
   FaWhatsapp,
-  FaStore,
 } from 'react-icons/fa6'
 
 export const profile = {
@@ -36,12 +35,17 @@ export const profile = {
     },
   ],
 
+    coupon: {
+      label: 'Cupón de descuento',
+      title: 'Mugs blancos',
+      code: 'MUGSREGALO26',
+    },
+
   shopping: {
     label: 'Compras',
     title: 'Nuestra Tienda',
     description: 'Descubre todo lo que tenemos para ti.',
     href: 'https://stefastore2.mitiendanube.com/',
-    icon: FaStore,
   },
 
   whatsapp: {
