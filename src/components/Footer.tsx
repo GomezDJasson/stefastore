@@ -3,13 +3,18 @@ import { profile } from '../data/profile'
 export function Footer() {
   return (
     <footer className="footer">
-      <a
-        href={profile.footer.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {profile.footer.text}
-      </a>
+      <p>{profile.footer.copyright}</p>
+
+      <p>
+        Diseñado por{' '}
+        <a
+          href={profile.footer.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Gomez D. Jasson
+        </a>
+      </p>
     </footer>
   )
 }

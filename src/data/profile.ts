@@ -50,12 +50,14 @@ export const profile = {
   },
 
   contact: {
-    label: 'Escríbenos por WhatsApp',
+    label: 'WhatsApp',
     icon: FaWhatsapp,
+    email: 'stefastore18@gmail.com',
   },
 
   footer: {
-    text: 'Diseñado por Jasson D. Gomez',
-    href: 'https://portafolio-jasson.vercel.app/',
-  },
+  copyright: '© 2026 Stefa Store. Todos los derechos reservados.',
+  text: 'Diseñado por Gomez D. Jasson',
+  href: 'https://portafolio-jasson.vercel.app/',
+},
 } as const

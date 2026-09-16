@@ -1,15 +1,22 @@
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, ShoppingBag } from 'lucide-react'
 import { profile } from '../data/profile'
 
 export function Shopping() {
-  const Icon = profile.shopping.icon
-
   return (
     <section
       className="shopping-section"
       aria-labelledby="shopping-title"
     >
-      <p className="section-label">{profile.shopping.label}</p>
+      <div className="shopping-heading">
+        <span className="section-line" />
+
+        <h2 id="shopping-title">
+          <ShoppingBag className="shopping-heading-icon" />
+          {profile.shopping.label}
+        </h2>
+
+        <span className="section-line" />
+      </div>
 
       <a
         className="shop-card"
@@ -18,15 +25,12 @@ export function Shopping() {
         rel="noopener noreferrer"
         aria-label={profile.shopping.title}
       >
-        <span className="shop-icon">
-          <Icon />
+        <span className="shop-art" aria-hidden="true">
+          <ShoppingBag />
         </span>
 
         <span className="shop-content">
-          <strong id="shopping-title">
-            {profile.shopping.title}
-          </strong>
-
+          <strong>{profile.shopping.title}</strong>
           <span>{profile.shopping.description}</span>
         </span>
 
