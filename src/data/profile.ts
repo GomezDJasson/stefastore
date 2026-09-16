@@ -10,7 +10,7 @@ export const profile = {
   name: 'Stefa Store',
   description: 'Tienda de Personalizados',
   tagline: 'Hacemos realidad tus ideas',
-  logo: '/assets/logo-stefa-store.png',
+  logo: './assets/logo-stefa-store.png',
 
   socialLinks: [
     {
